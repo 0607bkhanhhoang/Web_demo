@@ -15,7 +15,7 @@ Here are some screenshots to give you an idea of what the app looks like:
 
 ### Homepage
 
-![Homepage_1](demo_images/homepage_1.png)
+![Homepage_1](demo_images/homepages_1.png)
 
 ![Homepage_2](demo_images/homepage_2.png)
 
@@ -23,10 +23,10 @@ Here are some screenshots to give you an idea of what the app looks like:
 
 ![Homepage_4](demo_images/homepage_4.png)
 
-### Dashboard
+### Career
 
-![Dashboard](demo_images/dashboard.png)
-
+![Dashboard](demo_images/career_1.png)
+![Dashboard_2](demo_images/career_2.png)
 ### Settings
 
 ![Settings](demo_images/settings.png)
