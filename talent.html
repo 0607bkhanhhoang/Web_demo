@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join VERON - Careers</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0a0a23, #162040);
+      color: white;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0a0a23;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px rgba(126, 34, 206, 0.5);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(126, 34, 206, 0.4);
+        overflow-x: auto; /* Prevent clipping */
+    }
+
+    .logo-img {
+      height: 60px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), 0 0 20px rgba(126, 34, 206, 0.3);
+    }
+    .navbar-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navbar-links a {
+        font-size: 0.9rem; /* Slightly smaller text */
+        padding: 0.45rem 1rem; /* Reduced padding */
+        border: 1.5px solid #9d3ff6;
+        border-radius: 6px;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+        box-shadow: 0 0 6px #9d3ff6;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    }
+
+    .navbar-links a:hover {
+        background-color: #7e22ce;
+        box-shadow: 0 0 12px #9d3ff6, 0 0 18px #9d3ff6;
+        transform: scale(1.03);
+    }
+
+
+    .content {
+      padding-top: 120px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #00c3ff, #7e22ce);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p {
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      max-width: 600px;
+      color: #ccc;
+    }
+    .job-listing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .job-card {
+      background: #0a0a1e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #7e22ce, 0 0 30px #9d3ff6;
+      border: 2px solid #7e22ce;
+      transition: transform 0.3s;
+    }
+    .job-card:hover {
+      transform: translateY(-10px);
+    }
+    .job-card h3 {
+      background: linear-gradient(90deg, #7e22ce, #00c3ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-size: 1.3rem;
+    }
+    .job-card p {
+      color: #ccc;
+      margin: 0.5rem 0;
+    }
+    .apply-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+      transition: background 0.3s;
+    }
+    .apply-btn:hover {
+      background-color: #2563eb;
+    }
+    .application-form {
+      padding: 2rem;
+      background: #0a0a1e;
+      margin: 3rem auto;
+      max-width: 600px;
+      border: 2px solid #7e22ce;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #7e22ce, 0 0 30px #9d3ff6;
+    }
+    .application-form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(90deg, #00c3ff, #7e22ce);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .application-form label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    .application-form input,
+    .application-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #7e22ce;
+      background: #1c1c3b;
+      color: white;
+    }
+    .application-form button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+    }
+    .application-form button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="VERON Logo" class="logo-img">
+    </a>
+    <nav class="navbar-links">
+      <a href="web.html">HOME</a>
+      <a href="company.html">COMPANY</a>
+      <a href="careers.html">CAREERS</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h1>Join the Future of Semiconductor Innovation</h1>
+      <p>At VERON, we're building breakthroughs with passionate innovators. Explore our open roles and help us shape tomorrow.</p>
+    </section>
+
+    <section class="job-listing">
+      <div class="job-card">
+        <h3>Hardware Design Engineer</h3>
+        <p>Design next-gen semiconductor chips for AI and IoT.</p>
+        <a href="#application" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>Embedded Systems Developer</h3>
+        <p>Develop and optimize firmware and RTOS solutions.</p>
+        <a href="#application" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>AI Edge Architect</h3>
+        <p>Architect and deploy real-time edge AI systems.</p>
+        <a href="#application" class="apply-btn">Apply Now</a>
+      </div>
+    </section>
+
+    <section id="application" class="application-form">
+      <h2>Candidate Application Form</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="position">Position Applying For</label>
+        <input type="text" id="position" name="position" required>
+
+        <label for="resume">Link to Resume (URL)</label>
+        <input type="url" id="resume" name="resume" required>
+
+        <label for="message">Why do you want to join VERON?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Application</button>
+
+        
+      </form>
+    </section>
+  </main>
+</body>
+</html>

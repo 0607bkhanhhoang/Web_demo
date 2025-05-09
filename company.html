@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERON - Our Team & Achievements</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0a0a23, #162040);
+      color: white;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0a0a23;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px rgba(126, 34, 206, 0.5);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(126, 34, 206, 0.4);
+        overflow-x: auto; /* Prevent clipping */
+    }
+    .logo-img {
+      height: 50px;
+    }
+    .navbar-links {
+      display: flex;
+      gap: 1rem;
+    }
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #7e22ce;
+      border-radius: 6px;
+      box-shadow: 0 0 5px #7e22ce;
+      transition: background 0.3s;
+    }
+    .navbar-links a:hover {
+      background: #7e22ce;
+    }
+    .content {
+      padding-top: 100px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      background: linear-gradient(90deg, #00c3ff, #7e22ce);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .phd-list, .activities {
+      padding: 2rem;
+    }
+    .phd-card, .achievement-item {
+      background: #0a0a1e;
+      border: 2px solid #7e22ce;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px rgba(126, 34, 206, 0.4);
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .phd-card img {
+      width: 160px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #00c3ff;
+    }
+    .phd-card h3 {
+      margin-top: 0;
+      background: linear-gradient(90deg, #00c3ff, #7e22ce);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .achievement-item ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0a0a23;
+      border-top: 1px solid #7e22ce;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="VERON Logo" class="logo-img">
+    </a>
+    <nav class="navbar-links">
+      <a href="web.html">HOME</a>
+      <a href="company.html">COMPANY</a>
+      <a href="talent.html">CAREERS</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Meet Our PhD Experts</h1>
+    <section class="phd-list">
+      <div class="phd-card">
+        <img src="images/phd1.png" alt="Dr. Linh Nguyen">
+        <div>
+          <h3>Dr. Linh Nguyen – PhD in Microelectronics</h3>
+          <p>Leads the IC design team with extensive experience in low-power chip architectures for edge computing.</p>
+        </div>
+      </div>
+      <div class="phd-card">
+        <img src="images/phd2.png" alt="Dr. David Tran">
+        <div>
+          <h3>Dr. David Tran – PhD in Embedded Systems</h3>
+          <p>Focuses on real-time firmware design and system reliability for industrial IoT deployments.</p>
+        </div>
+      </div>
+      <div class="phd-card">
+        <img src="images/phd3.png" alt="Dr. Mei Tan">
+        <div>
+          <h3>Dr. Mei Tan – PhD in AI Hardware</h3>
+          <p>Specializes in neuromorphic computing and AI acceleration architectures using custom silicon.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2>Activities & Achievements</h2>
+    <section class="activities">
+      <div class="achievement-item">
+        <h3>Industry Collaborations</h3>
+        <ul>
+          <li>Partnered with major fabs on silicon validation projects.</li>
+          <li>Joint R&D with AI startups on low-latency inference chips.</li>
+        </ul>
+      </div>
+      <div class="achievement-item">
+        <h3>Academic Impact</h3>
+        <ul>
+          <li>Published 25+ IEEE papers in semiconductor innovation.</li>
+          <li>Presented at DAC, DATE, and ISSCC conferences.</li>
+        </ul>
+      </div>
+      <div class="achievement-item">
+        <h3>Awards & Milestones</h3>
+        <ul>
+          <li>2024: National Technology Innovation Grant recipient.</li>
+          <li>2023: "Top 10 Semiconductor Startups" by TechReview.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 VERON Labs. All rights reserved.
+  </footer>
+</body>
+</html>
